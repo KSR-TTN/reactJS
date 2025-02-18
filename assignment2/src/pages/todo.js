@@ -9,6 +9,10 @@ const Todo = () => {
     setInput("");
   };
 
+  const removeTodo = (index) => {
+    setTodoList(todoList.filter((item, i) => i !== index));
+  };
+
   return (
     <div>
       <h2>Todo List</h2>
@@ -21,7 +25,11 @@ const Todo = () => {
       <button onClick={addTodoToList}>Add Todo</button>
       <ul>
         {todoList.map((todo, index) => (
-          <li key={index}>{todo}</li>
+          <li key={index}>
+            {index}
+            {todo}
+            <button onClick={() => removeTodo(index)}>remove</button>
+          </li>
         ))}
       </ul>
     </div>
