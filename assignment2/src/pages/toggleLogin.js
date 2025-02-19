@@ -4,7 +4,6 @@ import LogoutPage from "../components/logout";
 
 const ToggleLogin = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const handleLogin = () => setIsLoggedIn(!isLoggedIn);
 
   return (
     <>
@@ -13,7 +12,13 @@ const ToggleLogin = () => {
           functionality : Toggle Page From Login Page to Logout Page and
           vice-versa
         </p>
-        <button onClick={handleLogin}>{isLoggedIn ? "Logout" : "Login"}</button>
+        <button
+          onClick={() => {
+            setIsLoggedIn(!isLoggedIn);
+          }}
+        >
+          {isLoggedIn ? "Logout" : "Login"}
+        </button>
         <div>{isLoggedIn ? <LoginPage /> : <LogoutPage />}</div>
       </div>
     </>
