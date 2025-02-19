@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Counter />
-        <Parent />
+        {/* <Counter /> */}
+        {/* <Parent /> */}
+        {/* <Todo /> */}
         <ToggleLogin />
-        <Todo />
       </header>
     </div>
   );
