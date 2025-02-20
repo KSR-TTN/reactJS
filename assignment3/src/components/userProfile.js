@@ -12,10 +12,17 @@ export const UserProfile = () => {
   };
   return (
     <>
+      <p>
+        Profile---------------------------------------------------------------------------------------
+      </p>
       <h2>User Profile Page</h2>
+      <h3>Hello User we have following details about you</h3>
       <p>Name: {name}</p>
       <p>Password: {password}</p>
       <button onClick={logout}>Logout</button>
+      <p>
+        Profile---------------------------------------------------------------------------------------
+      </p>
     </>
   );
 };

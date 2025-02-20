@@ -1,9 +1,9 @@
 import "./App.css";
 import { TheamProvider } from "./ContextApi/theamContext";
 import { UserCredProvider } from "./ContextApi/userCredContext";
-import TheamToggler from "./components/theamToggler";
+import { TheamToggler } from "./components/theamToggler";
 import { LoginPage } from "./components/loginPage";
-import { UserProfile } from "./components/userProfile";
+import { Home } from "./components/homePage";
 import { TheamContext } from "./ContextApi/theamContext";
 import { UserCredContext } from "./ContextApi/userCredContext";
 import { useContext } from "react";
@@ -30,7 +30,7 @@ function Content() {
         }`}
       >
         <TheamToggler />
-        {isLoggedIn ? <UserProfile /> : <LoginPage />}
+        {isLoggedIn ? <Home /> : <LoginPage />}
       </div>
     </>
   );

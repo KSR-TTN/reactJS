@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { TheamContext } from "../ContextApi/theamContext";
-const TheamToggler = () => {
+export const TheamToggler = () => {
   let { theam, toggleTheam } = useContext(TheamContext);
 
   return (
@@ -8,9 +8,10 @@ const TheamToggler = () => {
       <div>
         <span className="theamText">Theam : {theam}</span>
         <button onClick={toggleTheam}>Toggle Theam</button>
+        <p>
+          theam---------------------------------------------------------------------------------------
+        </p>
       </div>
     </>
   );
 };
-
-export default TheamToggler;
