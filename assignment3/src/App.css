@@ -1,0 +1,21 @@
+.wrapperDiv {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkTheam {
+  background-color: rgb(54, 53, 53);
+  color: white;
+}
+
+.lightTheam {
+  color: black;
+}
+
+.theamText {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
